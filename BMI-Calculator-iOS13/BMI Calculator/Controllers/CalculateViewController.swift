@@ -36,7 +36,6 @@ class CalculateViewController: UIViewController {
         let weight = WeightSlider.value
         
         calculateBrain.calculateBMI(height, weight)
-        
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
     

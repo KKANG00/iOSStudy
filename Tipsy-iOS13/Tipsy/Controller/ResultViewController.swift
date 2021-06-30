@@ -1,31 +1,30 @@
 //
 //  ResultViewController.swift
-//  BMI Calculator
+//  Tipsy
 //
-//  Created by KKANG on 2021/06/25.
-//  Copyright © 2021 Angela Yu. All rights reserved.
+//  Created by KKANG on 2021/06/30.
+//  Copyright © 2021 The App Brewery. All rights reserved.
 //
 
 import UIKit
 
 class ResultViewController: UIViewController {
-
-    var bmiValue: String?
-    var advice: String?
-    var color: UIColor?
     
-    @IBOutlet weak var resultBackground: UIImageView!
-    @IBOutlet weak var adviceLabel: UILabel!
-    @IBOutlet weak var bmiValueLabel: UILabel!
+    var result = 0.00
+    var split = 2
+    var tipPct = 10
+
+    @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var settingLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bmiValueLabel.text = bmiValue
-        adviceLabel.text = advice
-        resultBackground.backgroundColor = color
+        totalLabel.text = String(result)
+        settingLabel.text = "Split between \(split) people, with \(tipPct)% tip."
+        // Do any additional setup after loading the view.
     }
     
-    @IBAction func recalculatePressed(_ sender: UIButton) {
+    @IBAction func recalaulatePressed(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
     

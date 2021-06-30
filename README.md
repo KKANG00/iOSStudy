@@ -49,3 +49,10 @@ NSObject
 
 struct vs class  
 https://docs.swift.org/swift-book/LanguageGuide/ClassesAndStructures.html  
+
+## Tipsy
+UIStoryboardSegue, UIStepper 적용 예제
+
+### keywords 
+self.performSegue(withIdentifier: "goToResult", sender: self)  
+self.dismiss(animated: true, completion: nil)  

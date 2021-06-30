@@ -13,7 +13,7 @@ struct CalculateBrain {
     var bmi: BMI?
     
     mutating func calculateBMI(_ height: Float, _ weight: Float) {
-        let bmiValue = weight/pow(height, 2)
+        let bmiValue = height == 0 ? 0 : weight/pow(height, 2)
         let state = getState(bmiValue: bmiValue)
         
         switch state {
@@ -48,7 +48,7 @@ struct CalculateBrain {
     }
     
     func getAdvice() -> String {
-        return (bmi?.advice ?? "")
+        return (bmi?.advice ?? "No Advice")
     }
     
     func getBackgroundColor() -> UIColor {
