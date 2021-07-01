@@ -9,15 +9,18 @@
 import Foundation
 
 struct WeatherManager {
-    var weatherURL = "https://api.openweathermap.org/data/2.5/weather?appid=62bef37e33ecdff0caaa2cdb88a9c436&units=metric&q="
+    let apiconfig = Apiconfig()
+    
+    var weatherURL = "https://api.openweathermap.org/data/2.5/weather?units=metric"
     
     func fetchWeather(cityName: String) {
-        let urlString = "\(weatherURL)\(cityName)"
+        let urlString = "\(weatherURL)&q=\(cityName)&appid=\(apiconfig.apikey)"
         perfromRequest(urlString: urlString)
     }
     
     func perfromRequest(urlString: String) {
         if let url = URL(string: urlString) {
+            print(url)
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { data, response, error in
                 if error != nil {
@@ -27,7 +30,7 @@ struct WeatherManager {
                 }
                 
                 if let safeData = data {
-                    parseJSON(weatherData: safeData)
+//                    parseJSON(weatherData: safeData)
                 }
             }
             
@@ -36,8 +39,8 @@ struct WeatherManager {
         }
     }
     
-    func parseJSON(weatherData: Data) -> <#return type#> {
-        <#function body#>
-    }
+//    func parseJSON(weatherData: Data) -> <#return type#> {
+//        <#function body#>
+//    }
     
 }
