@@ -61,9 +61,8 @@ self.dismiss(animated: true, completion: nil)
 
 ## Clima
 Networking, Jsonparsing, API, Core Location
-[Swift] protocols, closure
+[Swift] protocols, closure, DispatchQueue
 
 ### keywords
-protocols
 delegate
-closure
+DispatchQueue
