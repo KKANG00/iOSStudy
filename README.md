@@ -88,11 +88,11 @@ extension
 
 
 ## FlashChat
-채팅 앱
-Firebase Authentication(Register, Login, Logout), Firestore, Cocopods, Custom UI(using .xib)
-navigationBar, UITableView
+회원 채팅 앱  
+Firebase Authentication(Register, Login, Logout), Firestore, Cocopods, Custom UI(using .xib)  
+navigationBar, UITableView  
 
 ### keywords
-Firebase
-Custom UI
-type casting
+Firebase  
+Custom UI  
+type casting  
