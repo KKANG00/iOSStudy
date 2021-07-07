@@ -60,9 +60,21 @@ self.dismiss(animated: true, completion: nil)
 
 
 ## Clima
-Networking, Jsonparsing, API, Core Location
-[Swift] protocols, closure, DispatchQueue
+Networking, Jsonparsing, API, Core Location  
+API: https://openweathermap.org/api (위치별 날씨 정보 api)  
+[Swift] protocols, closure, DispatchQueue  
+
+### keywords
+protocol
+delegate
+DispatchQueue  
+
+
+## ByteCoin
+Networking, Jsonparsing, API  
+API: https://docs.coinapi.io/#md-docs (환율에 따른 비트코인 가격정보 api)  
+UIPickerView, UIPickerViewDataSource 적용 예제  
 
 ### keywords
 delegate
-DispatchQueue
+extension
