@@ -71,8 +71,8 @@ API: https://openweathermap.org/api (위치별 날씨 정보 api)
 [Swift] protocols, closure, DispatchQueue  
 
 ### keywords
-protocol
-delegate
+protocol  
+delegate  
 DispatchQueue  
 
 
@@ -83,8 +83,8 @@ API: https://docs.coinapi.io/#md-docs (환율에 따른 비트코인 가격정�
 UIPickerView, UIPickerViewDataSource 적용 예제  
 
 ### keywords
-delegate
-extension
+delegate  
+extension  
 
 
 ## FlashChat
