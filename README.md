@@ -89,10 +89,23 @@ extension
 
 ## FlashChat
 회원 채팅 앱  
-Firebase Authentication(Register, Login, Logout), Firestore, Cocopods, Custom UI(using .xib)  
-navigationBar, UITableView  
+navigationBar, UITableView, Cocopods, Custom UI(using .xib)  
+Firebase Authentication (Register, Login, Logout)  
+Firebase Firestore (Create, Read, Query, Sort)  
+Swift Package Manager
 
 ### keywords
 Firebase  
 Custom UI  
 type casting  
+
+ViewController LifeCycle  
+- viewDidLoad  
+- viewWillAppear  
+- viewDidAppear  
+- viewWillDisappear  
+- viewDidDisappear  
+
+Application LifeCycle  
+- AppDelegate  
+- SceneDelegate  
