@@ -149,10 +149,9 @@ Data Binding
 기존 Clima 프로젝트와 Flash-Chat의 학습내용을 바탕으로 커스터마이징  
 날씨정보를 검색해 화면에 쌓아 보여주는 앱  
 
-Clima: openWeather API 통신  
-+ Flash-Chat: Custom TableViewCell 을 활용한 화면 구성  
+Clima: openWeather API 통신 + Flash-Chat: Custom TableViewCell 을 활용한 화면 구성  
 
-![](https://github.com/KKANG00/iOSStudy/tree/master/myClima/Simulator-Screen-Recording.gif)
+![](https://github.com/KKANG00/iOSStudy/blob/master/myClima/Simulator-Screen-Recording.gif)
 
 
 
