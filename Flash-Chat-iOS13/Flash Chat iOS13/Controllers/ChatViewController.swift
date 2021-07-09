@@ -82,6 +82,8 @@ class ChatViewController: UIViewController {
     }
 }
 
+//MARK: - UITableViewDataSource
+
 extension ChatViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return messages.count
@@ -94,6 +96,17 @@ extension ChatViewController: UITableViewDataSource {
         if message.sender == Auth.auth().currentUser?.email {
             cell.leftImageView.isHidden = true
             cell.rightImageView.isHidden = false
+            
+            let Stringtourl = URL(string: "https://images-na.ssl-images-amazon.com/images/I/91VKtrlvYKL._SY600_.jpg")
+            if let url = Stringtourl {
+                do {
+                    let data = try Data(contentsOf: url)
+                    cell.rightImageView.image = UIImage(data: data)
+                } catch{
+                    print(error)
+                }
+            }
+            
             cell.messageBubble.backgroundColor = UIColor(named: K.BrandColors.lightPurple)
             cell.label.textColor = UIColor(named: K.BrandColors.purple)
         }
@@ -107,9 +120,3 @@ extension ChatViewController: UITableViewDataSource {
         return cell
     }
 }
-
-//extension ChatViewController: UITableViewDelegate {
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print(messages[indexPath.row].sender)
-//    }
-//}
