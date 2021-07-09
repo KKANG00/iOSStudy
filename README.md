@@ -9,6 +9,7 @@ size class와 orientation에 맞는 자동 레이아웃 적용 (Responsive UIs)
  Alignment
 
 
+- - -
 ## Xylophone
 실로폰 연주 앱
 AVAudioSession 라이브러리 사용을 위한 Apple Document 활용  
@@ -20,6 +21,7 @@ https://developer.apple.com/documentation/foundation/bundle
 Apple Developer Document  
 
 
+- - -
 ## Quizzler / Destini
 퀴즈 맞히기 앱 / 여행 시나리오 앱  
 
@@ -30,6 +32,7 @@ V: User Interface
 C: Mediator  
 
 
+- - -
 ## BMI Calculator
 BMI 측정기 앱
 [Swift] Class Inheritance  
@@ -41,6 +44,7 @@ prepare 함수 (segue.identifier)
 NSObject  
 
 
+- - -
 ## Egg Timer
 에그 타이머 앱
 Timer 활용  
@@ -55,6 +59,7 @@ Timer 활용
 5. Optional Chaining
 
 
+- - -
 ## Tipsy
 결제금액 팁 계산기 앱  
 UIStoryboardSegue, UIStepper 적용  
@@ -64,6 +69,7 @@ self.performSegue(withIdentifier: "goToResult", sender: self)
 self.dismiss(animated: true, completion: nil)  
 
 
+- - -
 ## Clima
 위치별 날씨정보 제공 앱  
 Networking, Jsonparsing, API, Core Location  
@@ -76,6 +82,7 @@ delegate
 DispatchQueue  
 
 
+- - -
 ## ByteCoin
 비트코인 가격정보 제공 앱  
 Networking, Jsonparsing, API  
@@ -87,6 +94,7 @@ delegate
 extension  
 
 
+- - -
 ## FlashChat
 회원 채팅 앱  
 navigationBar, UITableView, Cocopods, Custom UI(using .xib)  
@@ -108,6 +116,18 @@ Application LifeCycle
 - AppDelegate  
 - SceneDelegate  
 
+
+- - -
+## CollectionViewPractice
+CollectionView 공부  
+UICollectionViewDelegateFlowLayout 로 CollectionView의 layout을 customize  
+
+### keywords
+UICollectionViewDataSource  
+UICollectionViewDelegateFlowLayout  
+
+
+- - -
 ## SoSimpleMVVM
 MVVM 패턴 공부  
 ![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/357354b4-4a13-4a9f-9370-fc816f88e599/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/357354b4-4a13-4a9f-9370-fc816f88e599/Untitled.png)

@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		624F9B682697402400868BC2 /* TableViewPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableViewPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		624F9B682697402400868BC2 /* CollectionViewPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624F9B6B2697402400868BC2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		624F9B6D2697402400868BC2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		624F9B6F2697402400868BC2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		624F9B5F2697402300868BC2 = {
 			isa = PBXGroup;
 			children = (
-				624F9B6A2697402400868BC2 /* TableViewPractice */,
+				624F9B6A2697402400868BC2 /* CollectionViewPractice */,
 				624F9B692697402400868BC2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		624F9B692697402400868BC2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				624F9B682697402400868BC2 /* TableViewPractice.app */,
+				624F9B682697402400868BC2 /* CollectionViewPractice.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		624F9B6A2697402400868BC2 /* TableViewPractice */ = {
+		624F9B6A2697402400868BC2 /* CollectionViewPractice */ = {
 			isa = PBXGroup;
 			children = (
 				624F9B6B2697402400868BC2 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				624F9B762697402400868BC2 /* LaunchScreen.storyboard */,
 				624F9B792697402400868BC2 /* Info.plist */,
 			);
-			path = TableViewPractice;
+			path = CollectionViewPractice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		624F9B672697402300868BC2 /* TableViewPractice */ = {
+		624F9B672697402300868BC2 /* CollectionViewPractice */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 624F9B7C2697402400868BC2 /* Build configuration list for PBXNativeTarget "TableViewPractice" */;
+			buildConfigurationList = 624F9B7C2697402400868BC2 /* Build configuration list for PBXNativeTarget "CollectionViewPractice" */;
 			buildPhases = (
 				624F9B642697402300868BC2 /* Sources */,
 				624F9B652697402300868BC2 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = TableViewPractice;
+			name = CollectionViewPractice;
 			productName = TableViewPractice;
-			productReference = 624F9B682697402400868BC2 /* TableViewPractice.app */;
+			productReference = 624F9B682697402400868BC2 /* CollectionViewPractice.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -101,7 +101,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 624F9B632697402300868BC2 /* Build configuration list for PBXProject "TableViewPractice" */;
+			buildConfigurationList = 624F9B632697402300868BC2 /* Build configuration list for PBXProject "CollectionViewPractice" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,7 +114,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				624F9B672697402300868BC2 /* TableViewPractice */,
+				624F9B672697402300868BC2 /* CollectionViewPractice */,
 			);
 		};
 /* End PBXProject section */
@@ -287,12 +287,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TableViewPractice/Info.plist;
+				INFOPLIST_FILE = CollectionViewPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.study.ios.TableViewPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.ios.CollectionViewPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,12 +305,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = TableViewPractice/Info.plist;
+				INFOPLIST_FILE = CollectionViewPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.study.ios.TableViewPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.study.ios.CollectionViewPractice;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -320,7 +320,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		624F9B632697402300868BC2 /* Build configuration list for PBXProject "TableViewPractice" */ = {
+		624F9B632697402300868BC2 /* Build configuration list for PBXProject "CollectionViewPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				624F9B7A2697402400868BC2 /* Debug */,
@@ -329,7 +329,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		624F9B7C2697402400868BC2 /* Build configuration list for PBXNativeTarget "TableViewPractice" */ = {
+		624F9B7C2697402400868BC2 /* Build configuration list for PBXNativeTarget "CollectionViewPractice" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				624F9B7D2697402400868BC2 /* Debug */,
