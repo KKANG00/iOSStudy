@@ -130,7 +130,7 @@ UICollectionViewDelegateFlowLayout
 - - -
 ## SoSimpleMVVM
 MVVM 패턴 공부  
-![https://s3-us-west-2.amazonaws.com/secure.notion-static.com/357354b4-4a13-4a9f-9370-fc816f88e599/Untitled.png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/357354b4-4a13-4a9f-9370-fc816f88e599/Untitled.png)
+![MVVM](https://media.vlpt.us/images/sso0022/post/5780c05c-3449-47e2-9984-71972eadff48/%EC%A0%9C%EB%AA%A9%EC%9D%84%20%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94._001%20(1).png "MVVM")
 Model/View/ViewModel로 이루어져있는 새로운 디자인패턴  
 
 1. 사용자 action → View → View Model (Command Pattern: 실행될 기능을 추상화, 캡슐화하여 한 클래스에서 여러 기능을 실행하도록 하는 패턴)
