@@ -51,8 +51,8 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
     // 아이템 크기
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 //        return CGSize(width: collectionView.frame.width/2, height: collectionView.frame.height/5)
-        print(collectionView.frame.width/3)
-        return CGSize(width: collectionView.frame.width/6, height: collectionView.frame.width/6)
+//        print(collectionView.frame.width/3)
+        return CGSize(width: 120, height: 150)
     }
 
     // 최소간격

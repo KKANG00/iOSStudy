@@ -52,7 +52,7 @@ extension WeatherViewController: ApiCallerDelegate {
 extension WeatherViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as! TableViewCell
-//        print(weathers[indexPath.row])
+        print(weathers[indexPath.row])
 //        print(weathers[indexPath.row].temperatureString)
         cell.CityNameLabel.text = weathers[indexPath.row].cityName
         cell.TemperatureLabel.text = weathers[indexPath.row].temperatureString

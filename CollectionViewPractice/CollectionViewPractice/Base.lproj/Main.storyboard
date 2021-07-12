@@ -12,7 +12,7 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TableViewPractice" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CollectionViewPractice" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,42 +21,44 @@
                                 <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZZK-Xf-EQT">
-                                    <size key="itemSize" width="125" height="125"/>
+                                    <size key="itemSize" width="125" height="151"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="AuK-S0-0Ju" customClass="customCollectionViewCell" customModule="TableViewPractice" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="cell" id="AuK-S0-0Ju" customClass="customCollectionViewCell" customModule="CollectionViewPractice" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="125" height="151"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="cbV-Er-Ado">
-                                            <rect key="frame" x="0.0" y="0.0" width="125" height="125"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="125" height="151"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="test1" translatesAutoresizingMaskIntoConstraints="NO" id="RKA-cr-elx">
-                                                    <rect key="frame" x="30.5" y="10" width="64" height="64"/>
+                                                    <rect key="frame" x="5" y="5" width="115" height="107"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="64" id="Juy-Yn-kEQ"/>
-                                                        <constraint firstAttribute="height" constant="64" id="tjF-RP-uED"/>
+                                                        <constraint firstAttribute="height" constant="107" id="265-kD-q0m"/>
+                                                        <constraint firstAttribute="width" constant="109" id="2Nh-35-ApI"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vsz-FW-MST">
-                                                    <rect key="frame" x="45" y="84" width="35.5" height="31"/>
-                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="vsz-FW-MST">
+                                                    <rect key="frame" x="5" y="117" width="115" height="29"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="RKA-cr-elx" firstAttribute="top" secondItem="cbV-Er-Ado" secondAttribute="top" constant="10" id="0bo-0q-FU2"/>
-                                                <constraint firstItem="vsz-FW-MST" firstAttribute="top" secondItem="RKA-cr-elx" secondAttribute="bottom" constant="10" id="OBm-cD-Z88"/>
-                                                <constraint firstItem="vsz-FW-MST" firstAttribute="centerX" secondItem="cbV-Er-Ado" secondAttribute="centerX" id="c51-5a-bQe"/>
-                                                <constraint firstItem="RKA-cr-elx" firstAttribute="centerX" secondItem="cbV-Er-Ado" secondAttribute="centerX" id="fda-Kj-tA0"/>
-                                                <constraint firstAttribute="bottom" secondItem="vsz-FW-MST" secondAttribute="bottom" constant="10" id="xhh-Dh-LfV"/>
+                                                <constraint firstAttribute="bottom" secondItem="vsz-FW-MST" secondAttribute="bottom" constant="5" id="2W8-YD-wnI"/>
+                                                <constraint firstItem="RKA-cr-elx" firstAttribute="leading" secondItem="cbV-Er-Ado" secondAttribute="leading" constant="5" id="434-AN-b4U"/>
+                                                <constraint firstItem="RKA-cr-elx" firstAttribute="top" secondItem="cbV-Er-Ado" secondAttribute="top" constant="5" id="EYe-bq-9ig"/>
+                                                <constraint firstAttribute="trailing" secondItem="vsz-FW-MST" secondAttribute="trailing" constant="5" id="QCD-sZ-9O3"/>
+                                                <constraint firstItem="vsz-FW-MST" firstAttribute="leading" secondItem="cbV-Er-Ado" secondAttribute="leading" constant="5" id="TT4-0r-zFX"/>
+                                                <constraint firstAttribute="trailing" secondItem="RKA-cr-elx" secondAttribute="trailing" constant="5" id="eBJ-GK-hlH"/>
+                                                <constraint firstItem="vsz-FW-MST" firstAttribute="top" secondItem="RKA-cr-elx" secondAttribute="bottom" constant="5" id="ewb-cf-s0a"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <size key="customSize" width="125" height="125"/>
+                                        <size key="customSize" width="125" height="151"/>
                                         <connections>
                                             <outlet property="imageView" destination="RKA-cr-elx" id="JRh-7p-nwp"/>
                                             <outlet property="label" destination="vsz-FW-MST" id="H8b-vP-LUH"/>

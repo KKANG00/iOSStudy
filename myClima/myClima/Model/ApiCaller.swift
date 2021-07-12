@@ -12,12 +12,7 @@ protocol ApiCallerDelegate {
     func didUpdateWeather(_ apicaller: ApiCaller, _ weather: WeatherModel)
 }
 
-class ApiCaller: ApiCallerDelegate {
-
-    func didUpdateWeather(_ apicaller: ApiCaller, _ weather: WeatherModel) {
-        print("didUpdateWeather")
-    }
-    
+class ApiCaller {
     let baseurl = "https://api.openweathermap.org/data/2.5/weather?units=metric"
     var delegate: ApiCallerDelegate?
     
