@@ -158,3 +158,7 @@ Clima: openWeather API 통신 + Flash-Chat: Custom TableViewCell 을 활용한 �
 ## Todoey
 데이터 저장이 가능한 할 일 목록을 만들고 관리하는 앱  
 Local Data Persistance
+
+### keywords
+UserDefaults
+NSCoder
