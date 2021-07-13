@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         CollectionView.dataSource = self
         CollectionView.delegate = self
-//        CollectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        CollectionView.register(customCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
     }
 }
 
