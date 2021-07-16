@@ -1,4 +1,5 @@
 # iOSStudy
+with 
 
 ## AutoLayout
 autoLayout? the rules that enable out User Interface Elements to know how they should be laid out.  
@@ -133,12 +134,6 @@ MVVM 패턴 공부
 ![MVVM](https://media.vlpt.us/images/sso0022/post/5780c05c-3449-47e2-9984-71972eadff48/%EC%A0%9C%EB%AA%A9%EC%9D%84%20%EC%9E%85%EB%A0%A5%ED%95%B4%EC%A3%BC%EC%84%B8%EC%9A%94._001%20(1).png "MVVM")
 Model/View/ViewModel로 이루어져있는 새로운 디자인패턴  
 
-1. 사용자 action → View → View Model (Command Pattern: 실행될 기능을 추상화, 캡슐화하여 한 클래스에서 여러 기능을 실행하도록 하는 패턴)
-2. View Model  -(data update request)→ Model
-3. Model -(updated data)→ View Model
-4. ViewModel 받은 데이터 가공저장
-5. View 자동갱신 (Data Binding View - View Model)
-
 ### more
 Command Pattern  
 Data Binding  
@@ -167,11 +162,13 @@ NSCoder
 - - -
 ## GalleryApp
 URL에서 이미지를 불러와 보여주는 사진첩 앱  
-networking 비동기 처리 적용  
-CollectionView Customized Layout 적용  
+- CollectionView Customized Layout 적용 -> 컬럼 수 변경기능 추가  
+- networking 비동기 처리 적용 -> 부드러운 UI 스크롤 구현  
+- Dictionary를 사용한 이미지캐싱 적용 -> 이미지 다운로드 반복 방지  
 
 ### keywords
 CollectionView  
+UICollectionViewDelegateFlowLayout  
 async  
 DispatchQueue  
 ImageCaching  
