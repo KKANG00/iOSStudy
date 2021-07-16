@@ -160,5 +160,18 @@ Clima: openWeather API 통신 + Flash-Chat: Custom TableViewCell 을 활용한 �
 Local Data Persistance
 
 ### keywords
-UserDefaults
-NSCoder
+UserDefaults  
+NSCoder  
+
+
+- - -
+## GalleryApp
+URL에서 이미지를 불러와 보여주는 사진첩 앱  
+networking 비동기 처리 적용  
+CollectionView Customized Layout 적용  
+
+### keywords
+CollectionView  
+async  
+DispatchQueue  
+ImageCaching  
