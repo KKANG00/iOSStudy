@@ -157,3 +157,5 @@ Local Data Persistance
 ### keywords
 UserDefaults  
 NSCoder  
+Core Data  
+
