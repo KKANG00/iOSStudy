@@ -1,12 +1,12 @@
 *.DS_Store
 **/.DS_Store
-Clima-iOS13/Clima/Apiconfig.swift
-ByteCoin-iOS13/ByteCoin/Apiconfig.swift
-myClima/myClima/Apiconfig.swift
 
-Flash-Chat-iOS13/Pods/
-Flash-Chat-iOS13/Podfile
-Flash-Chat-iOS13/Podfile.lock
-Flash-Chat-iOS13/Flash\ Chat\ iOS13/GoogleService-Info.plist
+**/Apiconfig.swift
+
+**/Pods/
+**/Podfile
+**/Podfile.lock
+
+**/GoogleService-Info.plist
 
 CollectionViewPractice/CollectionViewPractice/Assets.xcassets/
