@@ -15,12 +15,15 @@ class TodoListViewController: UITableViewController {
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
 
     var itemArray: [Item] = []
+    var selectedCategory: Category? {
+        didSet {
+            loadItems()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        print(dataFilePath)
-        loadItems()
     }
 
     // MARK: - TableView Datasource Methods
@@ -42,6 +45,13 @@ class TodoListViewController: UITableViewController {
     // MARK: - TableView Delegate Methods
 
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // CRUD: Update
+//        itemArray[indexPath.row].setValue(<#T##value: Any?##Any?#>, forKey: <#T##String#>)
+
+        // CRUD: Delete
+//        context.delete(itemArray[indexPath.row])
+//        itemArray.remove(at: indexPath.row)
+        // context에서 지운 후에 array에서 지워야함!
 
         itemArray[indexPath.row].done = !itemArray[indexPath.row].done
 
@@ -59,9 +69,11 @@ class TodoListViewController: UITableViewController {
 
         let action = UIAlertAction(title: "Add Item", style: .default) { (_) in
 
+            // CRUD: Create
             let newItem = Item(context: self.context)
             newItem.title = textField.text!
             newItem.done = false
+            newItem.parentCategory = self.selectedCategory
 
             self.itemArray.append(newItem)
 
@@ -75,7 +87,16 @@ class TodoListViewController: UITableViewController {
 
         alert.addAction(action)
 
-        present(alert, animated: true, completion: nil)
+        self.present(alert, animated: true) {
+                let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.dismissAlertController))
+                alert.view.superview?.subviews[0].addGestureRecognizer(tapGesture)
+        }
+
+//        present(alert, animated: true, completion: nil)
+    }
+
+    @objc func dismissAlertController() {
+        self.dismiss(animated: true, completion: nil)
     }
 
     // MARK: - Save Items
@@ -89,15 +110,43 @@ class TodoListViewController: UITableViewController {
         tableView.reloadData()
     }
 
-    func loadItems() {
-        if let data = try? Data(contentsOf: dataFilePath!) {
-            let decoder = PropertyListDecoder()
-//            do {
-//                itemArray = try decoder.decode([Item].self, from: data)
-//            }
-//            catch {
-//                print("Error")
-//            }
+    // CRUD: Read
+    func loadItems(with request: NSFetchRequest<Item> = Item.fetchRequest(), _ predicate: NSPredicate? = nil) {
+        let categoryPredicate = NSPredicate(format: "parentCategory.name MATCHES %@", selectedCategory!.name!)
+
+        if let defaultPredicate = predicate {
+            let compoundPredicate = NSCompoundPredicate(andPredicateWithSubpredicates: [categoryPredicate, defaultPredicate])
+            request.predicate = compoundPredicate
+        } else {
+            request.predicate = categoryPredicate
+        }
+
+        do {
+            let data = try context.fetch(request)
+            itemArray = data
+        } catch {
+            print("error fetching data from context \(error)")
+        }
+
+        tableView.reloadData()
+    }
+}
+
+// MARK: - SearchBar Methods
+extension TodoListViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        if searchText == "" {
+            loadItems()
+
+            DispatchQueue.main.async {
+                searchBar.resignFirstResponder()
+            }
+
+        } else {
+            let request: NSFetchRequest<Item> = Item.fetchRequest()
+            request.sortDescriptors = [NSSortDescriptor(key: "title", ascending: true)]
+
+            loadItems(with: request, NSPredicate(format: "title CONTAINS[cd] %@", searchBar.text!))
         }
     }
 }
