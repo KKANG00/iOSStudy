@@ -113,8 +113,14 @@ ViewController LifeCycle
 - viewDidDisappear  
 
 Application LifeCycle  
-- AppDelegate  
-- SceneDelegate  
+- :didFinishLaunchingWithOptions
+- :willConnectTo
+- WillEnterForeground
+- DidBecomeActive
+- WillResignActive
+- DidDisconnect
+- :didDiscardSceneSessions  
+(- DidEnterBackground)
 
 
 - - -
