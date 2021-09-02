@@ -34,6 +34,7 @@ class ViewController: UIViewController {
     }
 
     @IBAction func ResultPressed(_ sender: UIButton) {
+        print("I'm View Controller - ResultPressed")
         let name = nameTextField.text ?? ""
         let age = ageTextField.text ?? "0"
 //        let breed = breedTextField.text ?? ""

@@ -11,9 +11,8 @@ class DogViewModel {
     let dog: Dog
     
     init(name: String, breed: String, age: Int) {
+        print("I'm DogViewModel - init")
         self.dog = Dog(name: name, breed: breed, age: age)
-        
-        print("init DogViewModel ", self.dog.name, self.dog.age, self.dog.breed)
     }
     
     var name: String {
@@ -42,7 +41,7 @@ class DogViewModel {
 
 extension DogViewModel {
     func configure(_ vc: ViewController) {
-        print("configure")
+        print("I'm DogViewModel - configure")
         vc.nameLabel.text = name
         vc.ageLabel.text = ageText
         vc.feeLabel.text = adoptionFeeText

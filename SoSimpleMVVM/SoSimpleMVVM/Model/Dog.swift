@@ -20,7 +20,7 @@ class Dog {
     let age: Int
     
     init(name: String, breed: String, age: Int) {
-        print("init Model")
+        print("I'm Model - init")
         var brd: Breed
         
         switch breed {
