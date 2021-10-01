@@ -63,6 +63,7 @@ Timer 활용
 ## Tipsy
 결제금액 팁 계산기 앱  
 UIStoryboardSegue, UIStepper 적용  
+Calculator 계산결과 UnitTest 적용
 
 ### keywords 
 self.performSegue(withIdentifier: "goToResult", sender: self)  

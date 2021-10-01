@@ -14,6 +14,8 @@ class CalculateViewController: UIViewController {
     var splitValue = 2
     var totalValue = 0.00
     var result = 0.00
+    
+    let SpliCalculator = Calculator()
 
     @IBOutlet weak var billTextField: UITextField!
     @IBOutlet weak var zeroPctButton: UIButton!
@@ -21,6 +23,10 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var tenPctButton: UIButton!
     
     @IBOutlet weak var splitNumberLabel: UILabel!
+    
+    @IBAction func billTextTouched(_ sender: Any) {
+        billTextField.text = ""
+    }
     
     @IBAction func tipChanged(_ sender: UIButton) {
         billTextField.endEditing(true)
@@ -40,9 +46,8 @@ class CalculateViewController: UIViewController {
     
     @IBAction func calculatePressed(_ sender: UIButton) {
         let billtext = billTextField.text!
-        let split = Double(billtext)! * (tipPct+1) / Double(splitValue)
-        result = Double(String(format: "%.2f", split))!
-        print(result)
+        
+        result = SpliCalculator.calculateSplit(bill: Double(billtext)!, tipPercent: tipPct, splitNum: Double(splitValue))
         
         self.performSegue(withIdentifier: "goToResult", sender: self)
     }
