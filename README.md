@@ -26,15 +26,15 @@ Apple Developer Document
 퀴즈 맞히기 앱 / 여행 시나리오 앱  
 
 ### keywords
-MVC Pattern  
-M: Data&Login  
+MVC Pattern 
+M: Data&Logic  
 V: User Interface  
 C: Mediator  
 
 
 - - -
 ## BMI Calculator
-BMI 측정기 앱
+BMI 측정기 앱  
 [Swift] Class Inheritance  
 스토리보드 내에 Segue를 사용한 view 간의 화면 전환, 데이터 전달  
 
@@ -158,7 +158,7 @@ Clima: openWeather API 통신 + Flash-Chat: Custom TableViewCell 을 활용한 �
 - - -
 ## Todoey
 데이터 저장이 가능한 할 일 목록을 만들고 관리하는 앱  
-UITableView Inheritance, NavigationBar Design
+UITableView Inheritance, NavigationBar Design  
 SwiperCellKit
 
 ### keywords
